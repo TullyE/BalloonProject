@@ -17,7 +17,7 @@ class Balloon
   void show()
   {
     fill(mycol);
-    circle(x, y, mySize);
+    ellipse(x, y, mySize, mySize);
   }
   
   boolean checkEdge()
@@ -40,7 +40,6 @@ class Balloon
   {
     if((mX > this.x - this.mySize/2 && mX < this.x + this.mySize/2) && (mY > this.y - this.mySize/2 && mY < this.y + this.mySize/2))
     {
-      System.out.println("clicked");
       return true;
     }
     return false;
